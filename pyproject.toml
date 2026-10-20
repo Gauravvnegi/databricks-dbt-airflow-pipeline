@@ -1,0 +1,23 @@
+[project]
+name = "data-project-dbt"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Gauravvnegi", email = "gauravnegi2235@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "airflow-operators>=0.11.0",
+    "apache-airflow>=3.3.2",
+    "databricks-sdk>=0.117.0",
+    "dbt-core>=1.12.5",
+    "dbt-databricks>=1.12.6",
+]
+
+[project.scripts]
+data-project-dbt = "data_project_dbt:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
